@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="KD Kitchen Masala - Premium Nepali spices and masalas. Authentic taste from the Himalayas. 100% natural, farm-fresh ingredients.">
+  <meta name="keywords" content="Nepali masala, kitchen spices, Himalayan spices, organic masala, Nepali cooking">
+  <title>KD Kitchen Masala - Premium Nepali Spices | Authentic Himalayan Taste</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="fas fa-pepper-hot"></i>
+        <span>KD Kitchen Masala</span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#cart" class="nav-link cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-mountain"></i>
+        <span>From the Himalayas</span>
+      </div>
+      <h1>Taste of Nepal</h1>
+      <h2>Authentic Kitchen Masala</h2>
+      <p>Handcrafted with love using traditional Nepali recipes and premium Himalayan spices. Experience the authentic taste that has been passed down through generations.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToProducts()">
+          <i class="fas fa-shopping-bag"></i>
+          Shop Now
+        </button>
+        <button class="btn-secondary" onclick="scrollToAbout()">
+          <i class="fas fa-info-circle"></i>
+          Learn More
+        </button>
+      </div>
+      <div class="hero-features">
+        <div class="feature">
+          <i class="fas fa-leaf"></i>
+          <span>100% Natural</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-certificate"></i>
+          <span>Premium Quality</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-shipping-fast"></i>
+          <span>Fast Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Story</h2>
+        <p>Traditional Nepali flavors, modern convenience</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>From the Heart of Nepal</h3>
+          <p>KD Kitchen Masala brings you the authentic taste of Nepal, crafted with care using traditional recipes and the finest Himalayan spices. Our journey began in the beautiful valleys of Nepal, where spices are not just ingredients but a way of life.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <h4>25+</h4>
+              <p>Years of Tradition</p>
+            </div>
+            <div class="stat">
+              <h4>1000+</h4>
+              <p>Happy Customers</p>
+            </div>
+            <div class="stat">
+              <h4>15+</h4>
+              <p>Spice Varieties</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nepali spices and masala">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Premium Products</h2>
+        <p>Carefully selected spices for every kitchen</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Kitchen Masala">
+            <div class="product-badge">Best Seller</div>
+          </div>
+          <div class="product-info">
+            <h3>Classic Kitchen Masala</h3>
+            <p>Perfect blend of cumin, coriander, black pepper, and aromatic spices</p>
+            <div class="product-meta">
+              <span class="weight">100g</span>
+              <span class="price">₹149</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-add-cart" onclick="addToCart('Classic Kitchen Masala', 149)">
+                <i class="fas fa-cart-plus"></i>
+                Add to Cart
+              </button>
+              <button class="btn-buy-now" onclick="buyNow('Classic Kitchen Masala', 149)">
+                <i class="fas fa-bolt"></i>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Garam Masala">
+            <div class="product-badge">Premium</div>
+          </div>
+          <div class="product-info">
+            <h3>Garam Masala Blend</h3>
+            <p>Rich blend of cardamom, cinnamon, cloves, and warming spices</p>
+            <div class="product-meta">
+              <span class="weight">100g</span>
+              <span class="price">₹199</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-add-cart" onclick="addToCart('Garam Masala Blend', 199)">
+                <i class="fas fa-cart-plus"></i>
+                Add to Cart
+              </button>
+              <button class="btn-buy-now" onclick="buyNow('Garam Masala Blend', 199)">
+                <i class="fas fa-bolt"></i>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tandoori Masala">
+            <div class="product-badge">New</div>
+          </div>
+          <div class="product-info">
+            <h3>Tandoori Masala</h3>
+            <p>Authentic tandoori spice mix for grilled and roasted dishes</p>
+            <div class="product-meta">
+              <span class="weight">100g</span>
+              <span class="price">₹179</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-add-cart" onclick="addToCart('Tandoori Masala', 179)">
+                <i class="fas fa-cart-plus"></i>
+                Add to Cart
+              </button>
+              <button class="btn-buy-now" onclick="buyNow('Tandoori Masala', 179)">
+                <i class="fas fa-bolt"></i>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Real experiences from real customers</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"The aroma is absolutely authentic! It reminds me of my mother's cooking back in Nepal. KD Kitchen Masala has become a staple in my kitchen."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Priya Sharma">
+            <div>
+              <h4>Priya Sharma</h4>
+              <span>Kathmandu, Nepal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Finally found a masala that captures the true essence of Nepali cuisine. The quality is exceptional and the taste is unmatched!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Rakesh Patel">
+            <div>
+              <h4>Rakesh Patel</h4>
+              <span>Pokhara, Nepal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"As a chef, I'm very particular about spices. KD Kitchen Masala meets all my professional standards. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Anita Thapa">
+            <div>
+              <h4>Anita Thapa</h4>
+              <span>Professional Chef</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Address</h4>
+              <p>Thamel, Kathmandu<br>Nepal</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+977-1-4444444</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@kdkitchenmasala.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Mon-Sat: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm" onsubmit="return submitContact(event)">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-pepper-hot"></i>
+            <span>KD Kitchen Masala</span>
+          </div>
+          <p>Bringing authentic Nepali flavors to your kitchen with premium quality spices and traditional recipes.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">Kitchen Masala</a></li>
+            <li><a href="#products">Garam Masala</a></li>
+            <li><a href="#products">Tandoori Masala</a></li>
+            <li><a href="#products">Spice Blends</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe for updates and special offers</p>
+          <form class="newsletter-form" onsubmit="return subscribeNewsletter(event)">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" title="Subscribe">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KD Kitchen Masala. All rights reserved. | Made with ❤️ in Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Shopping Cart</h3>
+        <span class="close" onclick="closeCart()">&times;</span>
+      </div>
+      <div id="cartItems" class="modal-body">
+        <!-- Cart items will be populated here -->
+      </div>
+      <div class="modal-footer">
+        <div class="cart-total">
+          <strong>Total: ₹<span id="cartTotal">0</span></strong>
+        </div>
+        <button class="btn-checkout" onclick="checkout()">
+          <i class="fas fa-credit-card"></i>
+          Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
